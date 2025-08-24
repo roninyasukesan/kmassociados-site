@@ -1,0 +1,180 @@
+/* Estilos do Elementor */
+
+/* Estrutura básica */
+.elementor {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elementor *, .elementor *:before, .elementor *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elementor-section {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.elementor-section-boxed > .elementor-container {
+    max-width: 1140px;
+}
+
+.elementor-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1140px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.elementor-column {
+    position: relative;
+    min-height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 10px;
+}
+
+.elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+    width: 100%;
+}
+
+.elementor-column.elementor-col-50, .elementor-column[data-col="50"] {
+    width: 50%;
+}
+
+.elementor-column.elementor-col-33, .elementor-column[data-col="33"] {
+    width: 33.333%;
+}
+
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.elementor-widget {
+    position: relative;
+    width: 100%;
+}
+
+.elementor-widget-container {
+    -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    -o-transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+/* Tipografia */
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Botões */
+.elementor-button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #818a91;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.elementor-button:hover, .elementor-button:focus, .elementor-button:visited {
+    color: #fff;
+}
+
+.elementor-button-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.elementor-button-icon {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+}
+
+.elementor-button-text {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+    display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .elementor-column.elementor-col-33, 
+    .elementor-column.elementor-col-50, 
+    .elementor-column.elementor-col-100 {
+        width: 100%;
+    }
+    
+    .elementor-reverse-mobile > .elementor-container > .elementor-row {
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .elementor-column.elementor-md-33 {
+        width: 33.333%;
+    }
+    .elementor-column.elementor-md-50 {
+        width: 50%;
+    }
+    .elementor-column.elementor-md-100 {
+        width: 100%;
+    }
+}
+
+/* Animações */
+.elementor-animation-grow {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.elementor-animation-grow:hover, 
+.elementor-animation-grow:focus, 
+.elementor-animation-grow:active {
+    transform: scale(1.1);
+}
