@@ -1,4 +1,25 @@
-# GitHub Pages Configuration
 title: KM Associados
-url: https://roninyasukesan.github.io
-baseurl: /kmassociados-site
+url: "https://roninyasukesan.github.io"
+baseurl: "/kmassociados-site"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - server.js
+  - .gitignore
+
+# Ativação automática do GitHub Pages
+github:
+  repository_url: https://github.com/roninyasukesan/kmassociados-site
